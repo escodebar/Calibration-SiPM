@@ -1,0 +1,164 @@
+\documentclass[a4paper,twoside]{tufte-handout}
+
+%% Preamble
+\input{preamble}
+\input{settings}
+
+\begin{document}
+
+\title[Cosmic Ray Tracker calibration]{%
+  \setlength{\parindent}{0pt}%
+  {\LARGE
+    SiPM Gain calibration \par
+    for the scintillating Cosmic Ray Tracker
+    \vspace{9cm}
+
+  }
+  {\normalsize
+    Master thesis \par 
+    Faculty of Sciences, University of Bern \par \vspace{3cm}
+
+    Submitted by
+  }
+}
+\author{Pablo Verg\'es}
+
+
+\date{2016}
+
+\maketitle
+
+{%
+  \vspace{6cm}
+  \setlength{\parindent}{0pt}%
+  Supervisor \\
+  \textbf{Prof. Dr. Igor Kreslo}
+}
+
+\newpage
+\begin{abstract}
+  \setlength{\parindent}{0pt}%
+
+  The \gls{sipm}'s gain and its dependency on the bias voltage is studied and used to improve the distribution of gains within a \gls{crt} module. 
+
+  The distribution of gains is displayed before and after calibration.
+
+  Further studies on the \gls{crt} modules with varying power supply and bias voltages are presented.
+\end{abstract}
+\newpage
+
+% Define acronyms
+\input{glossaries}
+
+\tableofcontents
+\newpage
+
+\input{ch1intro}
+\clearpage
+\newpage
+
+\input{ch3detection}
+\clearpage
+\newpage
+
+\input{ch2interactions}
+\clearpage
+\newpage
+
+\input{ch4sources}
+\clearpage
+\newpage
+
+\input{ch5sterile}
+\clearpage
+\newpage
+
+\input{ch5anomalies}
+\clearpage
+\newpage
+
+\input{ch6sbnp}
+\clearpage
+\newpage
+
+\input{ch7cosmogenics}
+\clearpage
+\newpage
+
+\input{ch8crt}
+\clearpage
+\newpage
+
+\input{ch8panel}
+\clearpage
+\newpage
+
+\input{ch8feb}
+\clearpage
+\pagebreak
+
+\input{ch9calibration}
+\clearpage
+\pagebreak
+
+\input{ch10experiments}
+\clearpage
+\newpage
+
+\input{ch11conclusions}
+\clearpage
+\newpage
+
+%\input{ch12software}
+%\cleardoublepage
+%\newpage
+
+%\glsaddall
+\glossarystyle{list}
+\printglossary[type=\acronymtype]
+\newpage
+
+%% Bibliography
+\bibliographystyle{plainnat}
+\bibliography{research}
+\newpage
+
+%% Appendices
+\begin{appendices}
+  \section*{Declaration of consent}
+
+  on the basis of Article 28. para. 2 of the RSL05 phil.-nat.
+
+  \vspace*{12em}
+  \begin{table}
+  \centering
+  \begin{tabular}{ l l }
+    \toprule
+    Last / First name  & Verg\'es Pablo \\
+    Matriculation Nr.  & 04-812-269 \\
+    Study program      & Master \\
+    Title of thesis    & SiPM Gain calibration \\
+                       & for the scintillating Cosmic Ray Tracker \\
+    Supervisor         & Prof. Dr. Igor Kreslo \\
+
+    \bottomrule
+  \end{tabular}
+  \end{table}
+  \vspace*{12em}
+  I declare herewith that this thesis is my own work and that I have not used any sources other than those stated.
+  I have indicated the adoption of quotations as well as thoughts taken from other authors as such in the thesis.
+  I am aware that the Senate pursuant to Article 36 para. 1 lit. r of the University Act of 5 September, 1996 is authorised to revoke the title awarded on the basis of this thesis.
+  I allow herewith inspection in this thesis
+
+  \vspace*{12em}
+  \begin{table}
+  \begin{tabular}{ l l }
+    Place / Date  & \hspace*{20em} \\
+    \\
+    \\
+    \hspace*{20em} & Signature \\
+  \end{tabular}
+  \end{table}
+\end{appendices}
+
+\end{document}

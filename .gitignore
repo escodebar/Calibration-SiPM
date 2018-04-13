@@ -1,0 +1,23 @@
+# metafont files
+*.mf
+*.tfm
+*.t1
+
+# latex files
+*.aux
+*.bbl
+*.blg
+*.idx
+*.log
+*.out
+*.toc
+
+# feynman graphs
+*.300gf
+*.600pk
+
+# OS X
+.DS_Store
+
+# iPython notebooks
+.ipynb_checkpoints/**/*

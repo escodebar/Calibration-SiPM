@@ -1,0 +1,67 @@
+%% Theory
+\chapter{Neutrino oscillations}
+
+\section{The theoretical model}
+\cite{Wang:2015rma}
+Assuming neutrinos of the flavors $\nu_\alpha \in \{\nu_e, \nu_\mu, \nu_\tau\}$ and neutrinos of the masses $\nu_i \in \{\nu_1, \nu_2, \nu_3\}$, the relation between a flavor neutrino and the mass neutrinos is given then by the following equation:
+
+\begin{equation}
+    \nu_\alpha = \mathbb{U}_{\alpha i} \nu_i
+\end{equation}
+
+The \emph{mixing matrix} $\mathbb{U}_{\alpha i}$ is also called \emph{PMNS-matrix}\marginnote{\ldots or simply \emph{Pontecorvo-Maki-Nakagawa-Sakata matrix}} and it is a 3 dimensional, unitary matrix.
+The states are given by the following relations:
+
+\begin{align}
+    \ket{\nu_\alpha} &= \mathbb{U}^*_{\alpha i} \ket{\nu_i} \\
+    \ket{\nu_i}      &= \mathbb{U}_{\alpha i} \ket{\nu_\alpha}
+\end{align}
+
+Following the rules of quantum mechanics the probability of a neutrino oscillating from flavor $\alpha$ to flavor $\beta$ is given by the square of the modulus of the \emph{matrix element}:
+\begin{align}
+	P_{\alpha \to \beta}	&= |\bra{\nu_\beta} \mathbb{P} \ket{\nu_\alpha}|^2 \\
+	&= |\bra{\nu_j} \mathbb{U}^*_{\beta j} \delta_{i j} \mathbb{U}_{\alpha i} \ket{\nu_i}|^2
+\end{align}
+
+For simplicity, let's assume the \emph{propagation operator} to be $\mathbb{P} = e^{i \phi}$, where $\phi$ is just a phase.
+
+
+\begin{equation}
+    P_{e\alpha} = \delta_{e\alpha} - (2\delta_{e\alpha} - 1) \sin^2 (2\theta) \sin^2 (1.27 \frac{\Delta m^2 L}{E})
+    \label{eq:oscillations}
+\end{equation}
+
+Let's derive now formula \ref{eq:oscillations} for oscillations in two dimensions, i.e. assuming two different flavors only:
+\begin{align}
+    \nonumber
+    \bra{\nu_e} &= \cos(\theta)\bra{\nu_1} + \sin(\theta)\bra{\nu_2}\\
+    \nonumber
+    \ket{\nu_e} &= \cos(\theta)\ket{\nu_1} + \sin(\theta)\ket{\nu_2}
+\end{align}
+
+Applying the time evolution operator one gets
+\begin{align}
+    \nonumber
+    \ket{\nu_\mu (t)} &= \cos(\theta) \exp(-iE_1t) \ket{\nu_1} + \sin(\theta) \exp(-iE_2t) \ket{\nu_2}
+\end{align}
+
+out of which the probability ca be computed:
+\begin{align}
+    \nonumber
+    \braket{\nu_\mu | \nu_\mu(t)} &= & \left( \cos(\theta) \bra{\nu_1} + \sin(\theta) \bra{\nu_2} \right) \\
+    \nonumber
+    & &\left(\cos(\theta) e^{iE_1t} \ket{\nu_1} + \sin(\theta) e^{iE_2t} \ket{\nu_2} \right)
+\end{align}
+
+\subsection{Neutrino masses}
+\lipsum[21]
+\cite{Gerbino:2015ixa}
+\lipsum[22]
+
+\subsection{Mixing angles}
+\lipsum[23]
+\cite{Guo:2007ug}
+\lipsum[24]
+
+\newpage
+

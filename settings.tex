@@ -1,0 +1,68 @@
+%% Settings
+
+\usemintedstyle{solarizedlight}
+
+\newmintedfile[histos]{c}{
+  breaklines=true,
+  bgcolor=solarized-base3,
+  fontsize=\small,
+  tabsize=2,
+  numbers=left,
+  stepnumber=5
+}
+
+\newmintedfile[cpp]{cpp}{
+  breaklines=true,
+  bgcolor=solarized-base3,
+  fontsize=\small,
+  tabsize=2,
+  numbers=left,
+  stepnumber=5
+}
+
+\usetikzlibrary{angles,calc,backgrounds,positioning,shapes,arrows,chains,circuits.logic.US,decorations.markings,quotes}
+
+\tikzset{cross/.style={cross out, draw=black, minimum size=2*(#1-\pgflinewidth), inner sep=0pt, outer sep=0pt},
+%default radius will be 1pt. 
+cross/.default={1pt}}
+
+\graphicspath{{img/}}
+
+\fvset{fontsize=\normalsize}
+
+\lstset{
+    % How/what to match
+    sensitive=true,
+    % Border (above and below)
+    frame=lines,
+    % Extra margin on line (align with paragraph)
+    xleftmargin=\parindent,
+    % Put extra space under caption
+    belowcaptionskip=1\baselineskip,
+    % Colors
+    backgroundcolor=\color{solarized-base3},
+    basicstyle=\color{solarized-base00},
+    keywordstyle=\color{solarized-cyan},
+    commentstyle=\color{solarized-base1},
+    stringstyle=\color{solarized-blue},
+    numberstyle=\color{solarized-violet},
+    identifierstyle=\color{solarized-base00},
+    % Break long lines into multiple lines?
+    breaklines=true,
+    % Show a character for spaces?
+    showstringspaces=false,
+    tabsize=2,
+    language=c++,
+    numbers=left,
+    stepnumber=5
+}
+
+\hypersetup{
+    pdfauthor = {Pablo Verges},
+    pdftitle = {low energy neutrino interactions},
+    pdfcreator = {LaTeX}
+}
+
+\loadglsentries[main]{glossaries}
+\makeglossaries
+
